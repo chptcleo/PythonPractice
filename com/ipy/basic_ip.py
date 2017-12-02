@@ -1,0 +1,11 @@
+from IPy import IP
+ip = IP('192.168.0.0/16')
+print ip.version()
+print ip.len()
+print ip.strNormal(2)
+ip = IP('192.168.1.106')
+print ip.reverseNames()
+print ip.iptype()
+print ip.net()
+print ip.netmask()
+print ip.broadcast()
