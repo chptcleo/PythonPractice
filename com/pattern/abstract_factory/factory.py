@@ -1,15 +1,18 @@
 from com.pattern.abstract_factory.productA import ProductA1, ProductA2
 from com.pattern.abstract_factory.productB import ProductB1, ProductB2
+from abc import ABCMeta, abstractmethod
+
 class AbstractFactory:
     
-    def __init__(self):
-        print('AbstractFactory init')
+    __metaclass__ = ABCMeta
     
+    @abstractmethod
     def create_productA(self):
-        print('AbstractFactory create_productA')
-        
+        pass
+      
+    @abstractmethod  
     def create_productB(self):
-        print('AbstractFactory create_productB')
+        pass
 
 class ConcreteFactory1(AbstractFactory):
     

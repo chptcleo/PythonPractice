@@ -1,10 +1,12 @@
+from abc import ABCMeta, abstractmethod
+
 class ProductA:
     
-    def __init__(self):
-        print('ProductA init')
-        
+    __metaclass__ = ABCMeta
+    
+    @abstractmethod
     def work(self):
-        print('ProductA work')
+        pass
         
 class ProductA1(ProductA):
     

@@ -1,4 +1,4 @@
-from com.pattern.factory_method.product import Product,ConcreteProduct
+from com.pattern.factory_method.product import ConcreteProduct
 class Creator:
     
     def __init__(self):
@@ -6,7 +6,6 @@ class Creator:
     
     def create_product(self):
         print('Creator create product')
-        return Product()
         
     def operate(self, product):
         print('Creator operate')

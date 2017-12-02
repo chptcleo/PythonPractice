@@ -1,11 +1,14 @@
-class Builder:
+from abc import ABCMeta, abstractmethod
 
-    def __init__(self):
-        print('Builder init')
-        
+class Builder:
+    
+    __metaclass = ABCMeta
+
+    @abstractmethod        
     def build_part1(self):
-        print('Builder build part1')
-        
+        pass
+       
+    @abstractmethod 
     def build_part2(self):
-        print('Builder build part2')
+        pass
         

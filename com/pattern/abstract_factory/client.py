@@ -1,6 +1,7 @@
 from com.pattern.abstract_factory.factory import ConcreteFactory1, ConcreteFactory2
 
 if __name__ == '__main__':
+    
     factory1 = ConcreteFactory1()
     productA1 = factory1.create_productA()
     productA1.work()
