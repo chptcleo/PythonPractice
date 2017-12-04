@@ -14,5 +14,5 @@ class Singleton(object):
     
 a = Singleton()
 b = Singleton()
-print a == b
+print a is b
             
