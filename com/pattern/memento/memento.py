@@ -31,5 +31,23 @@ class Caretaker:
     def __init__(self):
         self.__memento = None
         
-    def 
+    def get_memento(self):
+        return self.__memento
+    
+    def set_memento(self, memento):
+        self.__memento = memento
         
+if __name__ == '__main__':
+    originator = Originator()
+    caretaker = Caretaker()
+    
+    originator.set_state('on')
+    caretaker.set_memento(originator.create_memento())
+    print originator.get_state()
+    
+    originator.set_state('off')
+    print originator.get_state()
+    originator.restore_memento(caretaker.get_memento())
+    print originator.get_state()
+            
+
