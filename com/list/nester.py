@@ -8,7 +8,7 @@ def loop_list(the_list, level, out=sys.stdout):
         else:
             for tab_stop in range(level):
                 print "\t",
-            print >> list_item,out
+            print list_item,out
             
 players = ["kobe", "jordan", "james", ["mess", "CR7", ["cruise", "wallace"]]]
 loop_list(players, 0)
