@@ -2,7 +2,8 @@
 @author: Wallace Chen
 '''
 def test_set():
-    a = set([1, 2, 3])
+    a = set([1, 2, 2, 3])
+    print a
     b = set([2, 3, 4])
     print a.union(b)
     print a | b

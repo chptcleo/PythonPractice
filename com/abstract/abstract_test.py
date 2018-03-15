@@ -79,4 +79,4 @@ if __name__ == '__main__':
     setattr(a, 'age', '32')
     print a.age
     a1 = A()
-    print getattr(a1, 'age')
+    print getattr(a1, 'name')
