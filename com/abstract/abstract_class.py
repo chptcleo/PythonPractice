@@ -1,6 +1,6 @@
 from abc import ABCMeta, abstractmethod
 
-class Parent:
+class Parent(object):
     
     __metaclass__ = ABCMeta
     
