@@ -1,9 +1,5 @@
 
-from enum import Enum, unique
-
-
-@unique
-class Gender(Enum):
+class Gender(object):
     Male = 0
     Female = 1
 
