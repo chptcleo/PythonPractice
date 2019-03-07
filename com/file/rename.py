@@ -26,10 +26,13 @@ def rename(file_list1):
         new_file_name = file_name[:line_index]
         new_file_name = new_file_name.rstrip()
         print file, new_file_name+file_type
-        os.rename(file, new_file_name+file_type)
+        try:
+            os.rename(file, new_file_name+file_type)
+        except:
+            os.remove(file)
         
 if __name__ == '__main__':
-    path1 = 'E:\Music\music'
+    path1 = 'E:\Music\wusun'
     file_list1 = []
     get_files(path1, file_list1)
     print len(file_list1)
