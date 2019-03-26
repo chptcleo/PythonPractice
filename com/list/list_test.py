@@ -1,10 +1,10 @@
 l = ['a','b','c']
-print l
+print(l[9:])
 l.append('d')
-print l
+print(l)
 l.extend('e')
-print l
-print isinstance(l, list)
+print(l)
+print(isinstance(l, list))
 l2 = ('x','y','z')
-print l2
-print isinstance(l2, tuple)
+print(l2)
+print(isinstance(l2, tuple))

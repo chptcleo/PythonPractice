@@ -4,6 +4,7 @@ Created on 2019��3��5��
 
 @author: Administrator
 '''
+
 def create_counter():
     
     def counter():
@@ -12,6 +13,7 @@ def create_counter():
     return counter
 
 if __name__ == '__main__':
+    
     counter_a = create_counter()
     print(counter_a(), counter_a(), counter_a(), counter_a(), counter_a())
     counter_b = create_counter()
