@@ -11,7 +11,7 @@ def sort(nums):
                 tmp = nums[j]
                 nums[j] = nums[j + 1]
                 nums[j + 1] = tmp
-    print nums
+    print(nums)
 
 
 if __name__ == '__main__':

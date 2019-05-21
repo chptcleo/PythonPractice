@@ -10,6 +10,7 @@ class SquareTestCase(unittest.TestCase):
     
     def startUp(self):
         print 'startUp'
+        unittest.TestCase.setUp(self)
     
     def test_integer(self):
         for x in xrange(-10, 10):
