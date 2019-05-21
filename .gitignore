@@ -1,4 +1,5 @@
 # eclipse ignore
+.settings/
 *.prefs
 
 # maven ignore
