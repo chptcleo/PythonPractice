@@ -17,6 +17,13 @@ def test_else():
             break
         finally:
             print 'finally clause'
+
+class PersonalException(Exception):
+    
+    def __init__(self, message, status):
+        super().__init__(message, status)
+        self.__message = message
+        self.__status = status
             
 if __name__ == '__main__':
     test_else()
