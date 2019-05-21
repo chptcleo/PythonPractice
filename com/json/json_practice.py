@@ -5,10 +5,11 @@ Created on May 17, 2018
 '''
 import json
 
-jsonData = '{"a":1,"b":2,"c":3,"d":4,"e":5}';
+jsonData = '{"a":1,"b":2,"c":3,"d":4,"e":5}'
 
 json_object = json.loads(jsonData)
 print json_object
 print json_object["c"]
 json_str = json.dumps(json_object, ensure_ascii=False)
 print json_str
+

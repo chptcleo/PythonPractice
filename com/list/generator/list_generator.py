@@ -1,8 +1,7 @@
-from string import lower
 
 
 def generate_list(L):
-    return [lower(x) for x in L if isinstance(x, str)]
+    return [str.lower(x) for x in L if isinstance(x, str)]
 
 
 if __name__ == "__main__":
