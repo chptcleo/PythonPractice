@@ -1,2 +1,5 @@
 eclipse.preferences.version=1
+encoding//com/counter/create_counter.py=utf-8
+encoding//com/decorator/add_log.py=utf-8
 encoding//com/file/rename.py=utf-8
+encoding//com/json/json_convert.py=utf-8
